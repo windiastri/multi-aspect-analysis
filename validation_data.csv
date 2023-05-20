@@ -1,0 +1,121 @@
+text,hotel,lokasi,kamar,pelayanan,makanan,harga,sentiment
+"Harga di hotel ini sangat terjangkau, makanan yang disajikan lezat, dan fasilitasnya lengkap.",1,0,0,0,1,1,positive
+"Harga makanan di hotel ini sangat terjangkau, pelayanan yang diberikan juga ramah dan baik.",0,0,0,1,1,1,positive
+"Meskipun harganya terjangkau, makanan di hotel ini sangat enak, dan kamarnya juga nyaman.",0,0,1,0,1,1,positive
+"Hotel ini memiliki harga yang terjangkau, makanan yang lezat, dan lokasinya strategis.",0,1,0,0,1,1,positive
+"Harga fasilitas di hotel ini sangat bersahabat, makanannya juga enak dan bervariasi.",1,0,0,0,1,1,positive
+"Harga fasilitas yang ditawarkan hotel ini sangat terjangkau, pelayanan yang diberikan juga memuaskan.",1,0,0,0,1,1,positive
+"Meskipun harganya terjangkau, hotel ini memiliki fasilitas yang lengkap dan kamar yang nyaman.",1,1,0,0,0,1,positive
+"Harga fasilitas di hotel ini sangat terjangkau, dan lokasinya juga strategis.",1,1,0,0,0,1,positive
+"Harga pelayanan di hotel ini sangat bersahabat, makanannya juga enak dan bervariasi.",1,0,0,0,1,1,positive
+"Meskipun harganya terjangkau, pelayanan di hotel ini sangat memuaskan dan fasilitasnya lengkap.",1,0,0,1,0,1,positive
+"Harga yang ditawarkan di hotel ini terlalu mahal, pelayanannya juga kurang memuaskan, dan fasilitasnya kurang memadai.",1,0,0,1,0,1,negative
+"Meskipun harganya tinggi, pelayanan di hotel ini kurang baik, dan kamarnya juga tidak nyaman.",0,0,1,1,0,1,negative
+"Harga hotel ini terlalu mahal, pelayanannya juga buruk, dan lokasinya tidak strategis.",0,1,0,1,0,1,negative
+Harga kamar di hotel ini tidak sebanding dengan kualitas makanannya.,0,0,1,1,0,1,negative
+"Harga kamar di hotel ini terlalu tinggi, dan fasilitas yang disediakan tidak memadai.",1,0,0,1,0,1,negative
+"Pelayanan di hotel ini tidak memuaskan, dan kualitas kamarnya juga buruk.",0,0,1,1,0,1,negative
+"Harga hotel ini terlalu mahal, dan lokasinya juga tidak strategis.",0,1,0,0,0,1,negative
+"Harga makanan di hotel ini terlalu tinggi, dan lokasinya juga kurang strategis.",0,1,0,0,1,1,negative
+Harga fasilitas di hotel ini tidak sebanding dengan kualitas yang ditawarkan.,1,0,0,0,0,1,negative
+"Pelayanan di hotel ini buruk, dan lokasinya juga tidak strategis.",0,1,0,1,0,0,negative
+"Makanan di hotel ini lezat, harga yang ditawarkan juga terjangkau, dan fasilitasnya lengkap.",1,0,0,0,1,1,positive
+"Harga makanan di hotel ini terjangkau, pelayanan yang diberikan juga baik, dan kualitas makanannya enak.",0,0,0,1,1,1,positive
+"Makanan di hotel ini memiliki harga yang wajar, kamar yang disediakan juga nyaman untuk menghabiskan waktu.",0,0,1,0,1,1,positive
+"Lokasi hotel ini strategis, harga makanannya terjangkau, dan kualitas makanannya juga memuaskan.",0,1,0,0,1,1,positive
+"Makanan di hotel ini enak, fasilitas yang disediakan juga lengkap, dan harganya terjangkau.",1,0,0,0,1,1,positive
+"Fasilitas yang ada di hotel ini lengkap, pelayanan yang diberikan juga baik, dan makanannya lezat.",1,0,0,1,1,0,positive
+"Makanan di hotel ini lezat, fasilitas yang disediakan juga lengkap, dan kamar yang tersedia nyaman.",1,0,1,0,1,0,positive
+"Lokasi hotel ini strategis, fasilitas yang disediakan lengkap, dan makanannya enak.",1,1,0,0,1,0,positive
+"Pelayanan yang diberikan di hotel ini baik, harga makanan juga terjangkau, dan kualitas makanannya memuaskan.",0,0,0,1,1,1,positive
+"Makanan di hotel ini enak, pelayanan yang diberikan baik, dan fasilitas yang tersedia lengkap.",1,0,0,1,1,0,positive
+"Makanan di hotel ini kurang enak, pelayanannya juga lambat, dan kamar yang disediakan tidak nyaman.",0,0,1,1,1,0,negative
+"Makanan di hotel ini tidak memuaskan, pelayanan yang diberikan juga kurang baik, dan lokasinya kurang strategis.",0,1,0,1,1,0,negative
+"Makanan di hotel ini terlalu mahal, kamar yang tersedia juga kurang nyaman untuk tinggal.",0,0,1,0,1,1,negative
+"Makanan di hotel ini tidak enak, fasilitas yang disediakan juga kurang memadai, dan kamar yang tersedia tidak nyaman.",1,0,1,0,1,0,negative
+"Makanan di hotel ini tidak lezat, pelayanan yang diberikan juga buruk, dan kamar yang disediakan kurang nyaman.",0,0,1,1,1,0,negative
+"Makanan di hotel ini tidak memuaskan, kamar yang tersedia juga tidak nyaman untuk menginap, dan lokasinya kurang strategis.",0,1,1,0,1,0,negative
+"Makanan di hotel ini tidak enak, lokasinya juga kurang strategis, dan harganya terlalu mahal.",0,1,0,0,1,1,negative
+"Makanan di hotel ini tidak enak, fasilitas yang disediakan kurang memadai, dan lokasinya juga kurang strategis.",1,1,0,0,1,0,negative
+"Makanan di hotel ini tidak memuaskan, pelayanan yang diberikan juga buruk, dan lokasinya kurang strategis.",0,1,0,1,1,0,negative
+"Makanan di hotel ini tidak enak, lokasinya juga kurang strategis, dan kamar yang disediakan tidak nyaman",0,1,1,0,1,0,negative
+"Fasilitas yang disediakan oleh hotel ini lengkap dan memadai, harganya juga terjangkau, dan makanannya lezat.",1,0,0,0,1,1,positive
+"Fasilitas yang diberikan oleh hotel ini sangat baik, harganya juga terjangkau, dan pelayanan yang diberikan sangat memuaskan.",1,0,0,1,0,1,positive
+"Fasilitas yang tersedia di hotel ini lengkap dan memadai, harganya juga terjangkau, dan kamar yang disediakan nyaman.",1,0,1,0,0,1,positive
+"Fasilitas yang disediakan oleh hotel ini sangat baik, harganya juga terjangkau, dan lokasinya strategis.",1,1,0,0,0,1,positive
+"Fasilitas yang disediakan oleh hotel ini lengkap dan memadai, makanannya juga lezat, dan harganya terjangkau.",1,0,0,0,1,1,positive
+"Fasilitas yang diberikan oleh hotel ini sangat baik, makanannya juga lezat, dan pelayanan yang diberikan sangat memuaskan.",1,0,0,1,1,0,positive
+"Fasilitas yang tersedia di hotel ini lengkap dan memadai, makanannya juga lezat, dan kamar yang disediakan nyaman.",1,0,1,0,1,0,positive
+"Fasilitas yang disediakan oleh hotel ini sangat baik, makanannya juga lezat, dan lokasinya strategis.",1,1,0,0,1,0,positive
+"Fasilitas yang disediakan oleh hotel ini lengkap dan memadai, pelayanan yang diberikan juga sangat baik, dan harganya terjangkau.",1,0,0,1,0,1,positive
+"Fasilitas yang disediakan oleh hotel ini lengkap dan memadai, pelayanan yang diberikan juga sangat baik, dan makanannya lezat.",1,0,0,1,1,0,positive
+"Meskipun fasilitas yang disediakan oleh hotel ini cukup baik, pelayanannya kurang memuaskan, dan kamar yang disediakan tidak sesuai harapan.",1,0,1,1,0,0,negative
+"Meskipun fasilitas yang diberikan oleh hotel ini cukup baik, pelayanannya kurang memuaskan, dan lokasinya tidak strategis.",1,1,0,1,0,0,negative
+"Meskipun fasilitas yang tersedia di hotel ini cukup baik, harga kamarnya terlalu tinggi.",1,0,1,0,0,1,negative
+"Meskipun fasilitas yang tersedia di hotel ini cukup baik, makanannya tidak enak, dan kamar yang disediakan tidak sesuai harapan.",1,0,1,0,1,0,negative
+"Meskipun fasilitas yang tersedia di hotel ini cukup baik, pelayanannya kurang memuaskan, dan kamar yang disediakan tidak sesuai harapan.",1,0,1,1,0,0,negative
+"Meskipun fasilitas yang tersedia di hotel ini cukup baik, pelayanannya kurang memuaskan, dan lokasinya tidak strategis.",1,1,1,0,0,0,negative
+"Meskipun fasilitas yang disediakan oleh hotel ini cukup baik, lokasinya tidak strategis, dan harganya terlalu tinggi.",1,1,0,0,0,1,negative
+"Meskipun fasilitas yang disediakan oleh hotel ini cukup baik, makanannya tidak enak, dan lokasinya tidak strategis.",1,1,0,0,1,0,negative
+"Meskipun fasilitas yang disediakan oleh hotel ini cukup baik, pelayanannya kurang memuaskan, dan lokasinya tidak strategis.",1,1,0,1,0,0,negative
+"Meskipun fasilitas yang disediakan oleh hotel ini cukup baik, lokasinya tidak strategis, dan kamar yang disediakan tidak sesuai harapan.",1,1,1,0,0,0,negative
+"Saya sangat senang dengan pelayanan yang diberikan oleh hotel ini, harga kamar yang terjangkau, dan makanan yang lezat.",0,0,0,1,1,1,positive
+"Pelayanan di hotel ini sangat baik, harga kamar yang terjangkau, dan fasilitas yang lengkap membuat pengalaman menginap saya menjadi menyenangkan.",1,0,0,1,0,1,positive
+"Pelayanan di hotel ini luar biasa, harga kamar yang terjangkau, dan kamar yang nyaman membuat saya betah menginap di sini.",0,0,1,1,0,1,positive
+"Pelayanan di hotel ini sangat ramah dan membantu, harga kamar yang terjangkau, dan lokasi yang strategis membuat saya merasa puas menginap di sini.",0,1,0,1,0,1,positive
+"Pelayanan di hotel ini sangat baik, makanannya enak, dan harga kamarnya juga terjangkau.",0,0,0,1,1,1,positive
+"Pelayanan di hotel ini sangat memuaskan, makanannya enak, dan fasilitas yang disediakan sangat lengkap.",1,0,0,1,1,0,positive
+"Pelayanan di hotel ini luar biasa, makanannya enak, dan kamar yang nyaman membuat saya betah menginap di sini.",0,0,1,1,1,0,positive
+"Pelayanan di hotel ini sangat ramah dan membantu, makanannya enak, dan lokasinya juga strategis.",0,1,0,1,1,0,positive
+"Pelayanan di hotel ini sangat baik, fasilitas yang disediakan lengkap, dan harga kamarnya juga terjangkau.",1,0,0,1,0,1,positive
+"Pelayanan di hotel ini sangat memuaskan, fasilitas yang disediakan lengkap, dan makanannya enak.",1,0,0,1,1,0,positive
+"Pelayanan di hotel ini kurang memuaskan, fasilitas yang disediakan juga tidak sesuai dengan harapan, dan kamar yang diberikan kurang nyaman.",1,0,1,1,0,0,negative
+"Pelayanan di hotel ini kurang baik, fasilitas yang disediakan juga tidak memadai, dan lokasinya juga kurang strategis.",1,1,0,1,0,0,negative
+"Pelayanan di hotel ini kurang memuaskan, kamar yang diberikan tidak sebanding dengan harga yang harus dibayar.",0,0,1,1,0,1,negative
+"Pelayanan di hotel ini kurang ramah, makanannya juga tidak enak, dan kamar yang diberikan tidak nyaman.",0,0,1,1,1,0,negative
+"Pelayanan di hotel ini tidak memuaskan, fasilitas yang disediakan kurang lengkap, dan kamar yang diberikan juga tidak sesuai dengan harapan.",1,0,1,1,0,0,negative
+"Pelayanan di hotel ini kurang baik, kamar yang diberikan tidak nyaman, dan lokasinya juga tidak strategis.",0,1,1,1,0,0,negative
+"Pelayanan di hotel ini kurang memuaskan, lokasinya juga tidak strategis, dan harga yang harus dibayar tidak sebanding dengan kualitasnya.",0,1,0,1,0,1,negative
+"Pelayanan di hotel ini kurang ramah, makanannya juga tidak enak, dan lokasinya juga kurang strategis.",0,1,0,1,1,0,negative
+"Pelayanan di hotel ini tidak memuaskan, fasilitas yang disediakan kurang lengkap, dan lokasinya juga tidak strategis.",1,1,0,1,0,0,negative
+"Pelayanan di hotel ini kurang baik, lokasinya tidak strategis, dan kamar yang diberikan juga tidak nyaman.",0,1,1,1,0,0,negative
+"Kamar di hotel ini sangat nyaman, harga yang ditawarkan juga terjangkau, dan makanannya enak.",0,0,1,0,1,1,positive
+"Kamar di hotel ini luas dan nyaman, harga yang ditawarkan juga sebanding dengan fasilitas yang disediakan.",1,0,1,0,0,1,positive
+"Kamar di hotel ini bagus, harga yang ditawarkan juga terjangkau, dan pelayanannya ramah.",0,0,1,1,0,1,positive
+"Kamar di hotel ini memiliki pemandangan yang indah, harga yang ditawarkan juga wajar, dan lokasinya strategis.",0,1,1,0,0,1,positive
+"Kamar di hotel ini nyaman untuk beristirahat, harga yang ditawarkan juga sesuai dengan kualitas makanannya.",0,0,1,0,1,1,positive
+"Kamar di hotel ini luas dan bersih, makanannya juga enak, dan fasilitas yang disediakan lengkap.",1,0,1,0,1,0,positive
+"Kamar di hotel ini nyaman untuk tinggal, makanannya lezat, dan pelayanannya baik.",0,0,1,1,1,0,positive
+"Kamar di hotel ini memiliki dekorasi yang menarik, makanannya juga enak, dan lokasinya strategis.",0,1,1,0,1,0,positive
+"Kamar di hotel ini nyaman dan dilengkapi dengan fasilitas lengkap, harga yang ditawarkan juga terjangkau.",1,0,1,0,0,1,positive
+"Kamar di hotel ini luas dan nyaman, fasilitas yang disediakan juga lengkap, dan makanannya enak.",1,0,1,0,1,0,positive
+"Kamar di hotel ini terasa sempit, fasilitas yang disediakan juga kurang memadai, dan pelayanannya lambat.",1,0,1,1,0,0,negative
+"Kamar di hotel ini memiliki lokasi yang kurang strategis, fasilitas yang disediakan juga terbatas, dan pelayanannya tidak memuaskan.",1,1,1,0,0,0,negative
+"Kamar di hotel ini tidak sebanding dengan harga yang ditawarkan, pelayanannya juga kurang baik, dan makanannya tidak enak.",0,0,1,1,0,1,negative
+"Kamar di hotel ini kurang bersih, pelayanannya juga tidak ramah, dan makanannya tidak memuaskan.",0,0,1,1,1,0,negative
+"Kamar di hotel ini memiliki fasilitas yang kurang lengkap, pelayanannya juga tidak responsif, dan makanannya biasa saja.",1,0,1,1,0,0,negative
+"Kamar di hotel ini memiliki lokasi yang jauh dari tempat strategis, pelayanannya juga tidak memuaskan, dan fasilitas yang disediakan terbatas.",0,1,1,1,0,0,negative
+"Kamar di hotel ini tidak sebanding dengan harga yang ditawarkan, lokasinya juga kurang strategis, dan makanannya tidak enak.",0,1,1,0,0,1,negative
+"Kamar di hotel ini memiliki lokasi yang tidak nyaman, makanannya juga tidak enak, dan fasilitas yang disediakan kurang memadai.",0,1,1,0,1,0,negative
+"Kamar di hotel ini memiliki fasilitas yang terbatas, lokasinya juga kurang strategis, dan pelayanannya tidak ramah.",1,1,1,0,0,0,negative
+"Kamar di hotel ini nyaman dan bersih, lokasinya juga strategis, dan pelayanannya ramah dan responsif.",0,1,1,1,0,0,negative
+"Lokasi hotel ini sangat strategis, harga yang ditawarkan juga terjangkau, dan makanannya lezat.",0,1,0,0,1,1,positive
+"Lokasi hotel ini sangat strategis, fasilitas yang disediakan juga lengkap, dan harganya terjangkau.",1,1,0,0,0,1,positive
+"Lokasi hotel ini sangat strategis, harga yang ditawarkan juga sesuai dengan kualitas pelayanan yang diberikan.",0,1,0,1,0,1,positive
+"Lokasi hotel ini sangat strategis, harga kamar yang ditawarkan juga terjangkau, dan kamarnya nyaman.",0,1,1,0,0,1,positive
+"Lokasi hotel ini sangat strategis, makanannya enak, dan harganya terjangkau.",0,1,0,0,1,1,positive
+"Lokasi hotel ini sangat strategis, fasilitas yang disediakan juga lengkap, dan makanannya lezat.",1,1,0,0,1,0,positive
+"Lokasi hotel ini sangat strategis, makanannya enak, dan pelayanannya ramah dan responsif.",0,1,0,1,1,0,positive
+"Lokasi hotel ini sangat strategis, makanannya enak, dan kamarnya nyaman.",0,1,1,0,1,0,positive
+"Lokasi hotel ini sangat strategis, fasilitas yang disediakan juga lengkap, dan harganya terjangkau.",1,1,0,0,0,1,positive
+"Lokasi hotel ini sangat strategis, fasilitas yang disediakan juga lengkap, dan makanannya lezat.",1,1,0,0,1,0,positive
+"Meskipun lokasinya strategis, namun fasilitas yang disediakan kurang memadai dan pelayanannya tidak memuaskan.",1,1,0,1,0,0,negative
+"Lokasi hotel ini memang bagus, tetapi fasilitas yang disediakan kurang memadai dan kamar tidak nyaman.",1,1,1,0,0,0,negative
+"Lokasi hotel ini memang strategis, tetapi harganya terlalu tinggi dan pelayanannya tidak memuaskan.",0,1,0,1,0,1,negative
+"Meskipun lokasinya strategis, namun pelayanan dan makanan di hotel ini kurang baik.",0,1,0,1,1,0,negative
+"Lokasi hotel ini memang bagus, tetapi pelayanannya kurang memuaskan dan fasilitas yang disediakan tidak memadai.",1,1,0,1,0,0,negative
+"Lokasi hotel ini memang strategis, tetapi pelayanannya tidak memuaskan dan kamar tidak nyaman.",0,1,1,1,0,0,negative
+"Meskipun lokasinya bagus, tetapi harga kamar di hotel ini terlalu tinggi.",0,1,1,0,0,1,negative
+"Lokasi hotel ini memang strategis, tetapi kamar tidak nyaman dan makanannya kurang enak.",0,1,1,0,1,0,negative
+"Meskipun lokasinya strategis, fasilitas yang disediakan di hotel ini kurang memadai.",1,1,1,0,0,0,negative
+"Lokasi hotel ini memang bagus, tetapi kamar tidak nyaman dan pelayanannya tidak memuaskan",0,1,1,1,0,0,negative
