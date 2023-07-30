@@ -1,0 +1,69 @@
+original_text,text_cleaned,actual_sentiment,predicted_sentiment
+"Kamar yg bersih, fasilitas oke lokasi dekat dg penjual makanan serta pelayanan yg ramah",kamar yg bersih fasilitas oke lokasi dekat dg penjual makanan serta pelayanan yg ramah,1,1
+"Staffnya ramah dan sigap, untuk menu makanan juga termasuk yang lengkap sesuai dengan bintang hotelnya. Kamarnya juga bersih dan nyaman.",staffnya ramah dan sigap untuk menu makanan juga termasuk yang lengkap sesuai dengan bintang hotelnya kamarnya juga bersih dan nyaman ,1,1
+Super duper ramah all staff.nya. Hotelnya bersih. Recomended,super duper ramah all staff nya hotelnya bersih recomended,1,1
+"Sarapan sahurnya juga enak banget rasanya. Lokasi hotel yg bagus banget, di seberang ada resto padang Sederhana",sarapan sahurnya juga enak banget rasanya lokasi hotel yg bagus banget di seberang ada resto padang sederhana,1,1
+"Lokasi hotel dekat dengan jalan raya dan ramai, perlu di improve adalah kamar kurang kedap suara, krn kamar sebelah ngobrol kita bisa mendengar",lokasi hotel dekat dengan jalan raya dan ramai perlu di improve adalah kamar kurang kedap suara krn kamar sebelah ngobrol kita bisa mendengar,1,1
+Suka dengan keramahan para staffnya. Kamarnya juga bersih.,suka dengan keramahan para staffnya kamarnya juga bersih ,1,1
+"Selalu suka nginep disini, kamar luas makanan enak dan variatif bahkan ada indomie.",selalu suka nginep disini kamar luas makanan enak dan variatif bahkan ada indomie ,1,1
+"Hotelnya bagus terutama lokasinya sangat oke, banyak sekali makanan sepanjang jalan.",hotelnya bagus terutama lokasinya sangat oke banyak sekali makanan sepanjang jalan ,1,1
+"Pelayanan oke banget, staff nya ramah, parkiran cukup akomodatif, sarapan beragam dan enak.",pelayanan oke banget staff nya ramah parkiran cukup akomodatif sarapan beragam dan enak ,1,1
+"Staf nya ramah2 dan sigap, kamar bersih, nyaman, kekurangan nya cuma kamar nya kurang kedap suara",staf nya ramah dan sigap kamar bersih nyaman kekurangan nya cuma kamar nya kurang kedap suara,1,1
+"Kamarnya bersih , wangi , staf nya ramah . Lokasinya strategis dan dikelilingi tempat makan yg enak2",kamarnya bersih wangi staf nya ramah lokasinya strategis dan dikelilingi tempat makan yg enak,1,1
+"Hotelnya bagus, nyaman, makanan jg enak.",hotelnya bagus nyaman makanan jg enak ,1,0
+Pelayanan prima dan lokasi sangat strategis,pelayanan prima dan lokasi sangat strategis,1,1
+Salat satu hotel terbaik dengan fasilitas lengkap dan pelayanan yang memuaskan,salat satu hotel terbaik dengan fasilitas lengkap dan pelayanan yang memuaskan,1,1
+"Parkiran terbatas sepertinya, pelayanan ramah, kamarnya oke lah, tidak terlalu besar",parkiran terbatas sepertinya pelayanan ramah kamarnya oke lah tidak terlalu besar,1,1
+"Staff ramah dan sangat membantu, kamar bersih dan nyaman",staff ramah dan sangat membantu kamar bersih dan nyaman,1,1
+"Menyenangkan nginep the 101 yogyakarta, kamarnya bagus, bersih, stafnya ramah ramah dan dekat kemana mana",menyenangkan nginep the yogyakarta kamarnya bagus bersih stafnya ramah ramah dan dekat kemana mana,1,0
+"Lokasinya strategis, kamarnya bagus dan bersih",lokasinya strategis kamarnya bagus dan bersih,1,1
+"semua staf hotelnya ramah, tempat menyenangkan, makanan enak",semua staf hotelnya ramah tempat menyenangkan makanan enak,1,1
+"Pelayanan sgt bagus, hotel bersih dan menu sarapan jg beragam dan enak",pelayanan sgt bagus hotel bersih dan menu sarapan jg beragam dan enak,1,1
+Lokasi strategis fasilitas baik,lokasi strategis fasilitas baik,1,1
+"Kamar cukup rapi dan bersih, lokasi sangat starategis",kamar cukup rapi dan bersih lokasi sangat starategis,1,1
+"Sangat puas dengan pelayanan di hotel ini, makananya komplit dan enak-enak",sangat puas dengan pelayanan di hotel ini makananya komplit dan enak enak,1,1
+"Kamarnya bagus, pelayanannya juga oke, receptionis nya juga ramah dan sigap kalau kita minta tolong",kamarnya bagus pelayanannya juga oke receptionis nya juga ramah dan sigap kalau kita minta tolong,1,1
+"Kamar bersih, pelayanan memuaskan",kamar bersih pelayanan memuaskan,1,1
+"kamar yg bersih fasilitas oje lokasi dekat dg penjual makanan serta pelayanan yg ramah',",kamar yg bersih fasilitas oje lokasi dekat dg penjual makanan serta pelayanan yg ramah ,1,0
+"respon staff baik dan cepat',",respon staff baik dan cepat ,1,1
+"pelayanan semua ramah dan bagus saya suka',",pelayanan semua ramah dan bagus saya suka ,1,1
+"fasilitas hotel bagus yang sangat lengkap seperti bintang lima',",fasilitas hotel bagus yang sangat lengkap seperti bintang lima ,1,1
+"saya suka lokasi hotel strategis dekat banyak rumah makan',",saya suka lokasi hotel strategis dekat banyak rumah makan ,1,1
+"kamarnya juga bersih dan nyaman',",kamarnya juga bersih dan nyaman ,1,1
+"makanan dan minuman untuk sarapan pagi bervariasi buat anak-anak suka',",makanan dan minuman untuk sarapan pagi bervariasi buat anak anak suka ,1,1
+"makanan dan minuman sarapan pagi enak semua',",makanan dan minuman sarapan pagi enak semua ,1,1
+"makanan di hotel ini lezat',",makanan di hotel ini lezat ,1,1
+"kamar mewah dengan balkon pemandangan kota',",kamar mewah dengan balkon pemandangan kota ,1,1
+"harga terjangkau kualitas bintang lima, saya sangat suka',",harga terjangkau kualitas bintang lima saya sangat suka ,1,1
+"Kurang bersih menurut saya, pelayanan kurang ok, karena saya ditelpon tengah malam untuk konfirmasi room service padahal saya ga pesen sama sekali",kurang bersih menurut saya pelayanan kurang ok karena saya ditelpon tengah malam untuk konfirmasi room service padahal saya ga pesen sama sekali,0,0
+Pelayanan tdk menyenangkan. Kamar ada kecoaknya.,pelayanan tdk menyenangkan kamar ada kecoaknya ,0,1
+Kamar tidak kedap suara. Sangat mengganggu kenyamanan,kamar tidak kedap suara sangat mengganggu kenyamanan,0,0
+Kamar nyaman tapi tidak kedap suara,kamar nyaman tapi tidak kedap suara,0,0
+Tempat Oke Tapi untuk makanan sangat sangat buruk,tempat oke tapi untuk makanan sangat sangat buruk,0,1
+"Ukuran kamar kecil, shower tidak berfungsi dgn baik",ukuran kamar kecil shower tidak berfungsi dgn baik,0,0
+Ruangan pengap. Pelayanan kurang.,ruangan pengap pelayanan kurang ,0,1
+"kebersihan kamarnya tidak dijaga, shower rusak tidak diganti, dinding sampai jamuran. Untuk pelayanan masih standard. hanya kamarnya tidak ada kualitas",kebersihan kamarnya tidak dijaga shower rusak tidak diganti dinding sampai jamuran untuk pelayanan masih standard hanya kamarnya tidak ada kualitas,0,0
+harga rada mahal untuk sekelas POP Hotel,harga rada mahal untuk sekelas pop hotel,0,1
+Receptionis nya ga membantu sama sekali main sembarang cancel aja sangat tidak membantu,receptionis nya ga membantu sama sekali main sembarang cancel aja sangat tidak membantu,0,0
+kurang suka dengan design kamar dan kamar mandinya,kurang suka dengan design kamar dan kamar mandinya,0,1
+lantai di kamar masih kotor dan berdebu,lantai di kamar masih kotor dan berdebu,0,1
+"Kebersihan kurang, cenderung lusuh dan tidak bersih",kebersihan kurang cenderung lusuh dan tidak bersih,0,0
+handuk kotor dan sangat berisik kamar nya.,handuk kotor dan sangat berisik kamar nya ,0,0
+mahal buat harga segitu untuk hotel seprti itu,mahal buat harga segitu untuk hotel seprti itu,0,0
+"Kamarnya kurang bersih, lantai kamar kurang bersih",kamarnya kurang bersih lantai kamar kurang bersih,0,0
+Kurang suka sama kamar nya lembab bgt,kurang suka sama kamar nya lembab bgt,0,1
+"Sarapan sangat tidak bervariasi, rasa standar/biasa",sarapan sangat tidak bervariasi rasa standar biasa,0,0
+"kurang memuaskan, fasilitas kurang",kurang memuaskan fasilitas kurang,0,0
+minusnya makanan biasa saja..parkir terbatas,minusnya makanan biasa saja parkir terbatas,0,1
+Variasi sarapan kurang banyak,variasi sarapan kurang banyak,0,0
+"Harga tidak sesuai sepadan dengan realita. Kamar terlalu gelap, seperti kamar hotel seharga 150.000an. Sarapan kurang rekomended dan kurang bervariasi",harga tidak sesuai sepadan dengan realita kamar terlalu gelap seperti kamar hotel seharga an sarapan kurang rekomended dan kurang bervariasi,0,0
+"Pelayanan nya sangat tidak memuaskan, tidak ada fasilitas valley, dan ketika tamu kesulitan mengangat barang, tidak ada satu pun petugas yang menawarkan diri.",pelayanan nya sangat tidak memuaskan tidak ada fasilitas valley dan ketika tamu kesulitan mengangat barang tidak ada satu pun petugas yang menawarkan diri ,0,0
+fasilitas dengan harga dan reting hotel menurut saya masih kurang,fasilitas dengan harga dan reting hotel menurut saya masih kurang,0,1
+kondisi kamar cenderung berdebu dan kamar mandi cenderung kurang terawat,kondisi kamar cenderung berdebu dan kamar mandi cenderung kurang terawat,0,0
+harga terlalu mahal jika dibandingkan dengan fasilitasnya,harga terlalu mahal jika dibandingkan dengan fasilitasnya,0,0
+kamar pengap tidak ada jendela yang memadai,kamar pengap tidak ada jendela yang memadai,0,0
+harga terlalu mahal tidak sesuai dengan pelayanan,harga terlalu mahal tidak sesuai dengan pelayanan,0,0
+makanan di resto hotel begitu buruk dan tidak enak,makanan di resto hotel begitu buruk dan tidak enak,0,1
+kamar mandi hotel ini buruk sekali,kamar mandi hotel ini buruk sekali,0,1
+"pelayanan buruk, tidak ramah pada pengunjung',",pelayanan buruk tidak ramah pada pengunjung ,0,1
+"pelayanan di resto kurang baik',",pelayanan di resto kurang baik ,0,1

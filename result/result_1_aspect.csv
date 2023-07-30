@@ -1,0 +1,15 @@
+text_cleaned,actual_aspect,predicted_aspect
+menu makanan lengkap ,1,1
+makanan dan minuman sarapan pagi enak enak ,1,0
+makanan di hotel ini lezat dan memuaskan ,1,1
+restoran hotel ini menyajikan makanan yang lezat dan segar ,1,1
+makanan di hotel ini sungguh memuaskan selera ,1,1
+untuk breakfast hotelnya lengkap tetapi makanan yang disajikan kurang enak,1,1
+makanannya kurang enak tapi overall good,1,1
+tempat makan nya agak sempit tapi makanan nya enak,1,0
+makanannya enak dan bervariasi,1,0
+sarapannya variatif dan enak,1,0
+makanan enak bervariasi recomended hotel ,1,1
+ini rumah horor,0,1
+tidak suka permainan ini,0,1
+pop hotel di jogja deket dengan malioboro dan stasiun tugu jogja sangat nyaman dan bersih,0,0
