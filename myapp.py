@@ -16,6 +16,7 @@ from keras.preprocessing.sequence import pad_sequences
 from sklearn.metrics import confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
 
 model_mapping = {
         "harga": "aspek_harga.h5",
@@ -26,7 +27,7 @@ model_mapping = {
         "fasilitas": "aspek_fasilitas.h5",
     }
 
-aspect_options = ["lokasi", "makanan", "kamar", "hotel", "pelayanan", "harga", "fasilitas"]
+aspect_options = ["lokasi", "makanan", "kamar", "pelayanan", "harga", "fasilitas"]
 
 def cleaning(text):
     text = nfx.remove_numbers(text) # Hapus number
@@ -38,9 +39,12 @@ def casefolding(text):
 
 def get_selected_model(selected_aspect):
     model_filename = model_mapping.get(selected_aspect)
-    
+    models_directory = "aspect_models"
+
     if model_filename is not None:
-        model = load_model(model_filename)
+        model_path = os.path.join(models_directory, model_filename)
+        model = load_model(model_path)
+        print(model_path)
         return model
     else:
         st.info("Model not available for the selected aspect.")
@@ -57,7 +61,6 @@ def get_models(selected_aspects):
             st.error(f"Model not available for the selected aspect: {selected_aspect}")
     
     return model_names
-
 
 def two_aspect():
     review_test = st.text_input('Write a Review', value=None)
@@ -151,7 +154,9 @@ def single_aspect():
     st.markdown("---")
     uploaded_file_single_aspect = st.file_uploader("Unggah file review kalimat single aspect", type=["xlsx"])
     st.markdown("---")
-    selected_aspect = st.selectbox("Pilih aspek:", aspect_options, index=0)
+    single_aspect_options = ["none","lokasi", "makanan", "kamar", "pelayanan", "harga", "fasilitas"]
+    selected_aspect = st.selectbox("Pilih aspek:", single_aspect_options, index=0)
+    st.markdown("---")
 
     if (review_test is not None or uploaded_file_single_aspect is not None) and selected_aspect != "none":
         model = get_selected_model(selected_aspect)
@@ -162,7 +167,6 @@ def single_aspect():
             df = pd.DataFrame({'text': [review_test]})
         review_cleaned = df['text'].apply(cleaning).apply(casefolding)
 
-        # tokenize text
         tokenizer = Tokenizer()
         tokenizer.fit_on_texts(review_cleaned)
         X=tokenizer.texts_to_sequences(review_cleaned)
@@ -176,6 +180,7 @@ def single_aspect():
         for result in predictions_label:
             predicted_result.append(result[0].numpy())
         
+        st.write("aspect :", selected_aspect)
         st.write("predicted aspect :", predicted_result)
 
 # Control display data
