@@ -4,7 +4,7 @@ import numpy as np
 
 # Libraries for Text Preprocessing
 import re
-import neattext.functions as nfx
+# import neattext.functions as nfx
 
 # libraries for model predictions
 from keras.models import load_model
@@ -30,7 +30,7 @@ model_mapping = {
 aspect_options = ["lokasi", "makanan", "kamar", "pelayanan", "harga", "fasilitas"]
 
 def cleaning(text):
-    text = nfx.remove_numbers(text) # Hapus number
+    # text = nfx.remove_numbers(text) # Hapus number
     text = re.sub('[^0-9a-zA-Z]+', ' ', text) # Hapus karakter selain alfabet dan angka
     return text
 
