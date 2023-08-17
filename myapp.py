@@ -30,7 +30,7 @@ model_mapping = {
 aspect_options = ["lokasi", "makanan", "kamar", "pelayanan", "harga", "fasilitas"]
 
 def cleaning(text):
-    # text = nfx.remove_numbers(text) # Hapus number
+    text = nfx.remove_numbers(text)
     text = re.sub('[^0-9a-zA-Z]+', ' ', text) # Hapus karakter selain alfabet dan angka
     return text
 
@@ -44,7 +44,6 @@ def get_selected_model(selected_aspect):
     if model_filename is not None:
         model_path = os.path.join(models_directory, model_filename)
         model = load_model(model_path)
-        print(model_path)
         return model
     else:
         st.info("Model not available for the selected aspect.")
@@ -62,49 +61,6 @@ def get_models(selected_aspects):
     
     return model_names
 
-def two_aspect():
-    review_test = st.text_input('Write a Review', value=None)
-    st.markdown("---")
-    uploaded_file_single_aspect = st.file_uploader("Unggah file review kalimat kombinasi aspect", type=["xlsx"])
-    st.markdown("---")
-    selected_aspects = st.multiselect("Pilih 2 aspek:", aspect_options, max_selections=2)
-
-    if len(selected_aspects) == 2:
-        model_filenames = get_models(selected_aspects)
-        models = []
-        for filename in model_filenames:
-            model = load_model(filename)
-            models.append(model)
-        
-        if uploaded_file_single_aspect is not None:
-            df = pd.read_excel(uploaded_file_single_aspect)
-        else:
-            df = pd.DataFrame({'text': [review_test]})
-        review_cleaned = df['text'].apply(cleaning).apply(casefolding)
-
-        # tokenize text
-        tokenizer = Tokenizer()
-        tokenizer.fit_on_texts(review_cleaned)
-        X=tokenizer.texts_to_sequences(review_cleaned)
-        X=pad_sequences(X, maxlen=31, padding='post')
-
-        # # Lakukan prediksi pada seluruh data test menggunakan setiap model
-        predictions = np.zeros((X.shape[0], len(models)))
-        for i, model in enumerate(models):
-            preds = model.predict(X)
-            preds_binary = np.where(preds > 0.5, 1, 0)
-            for j, pred in enumerate(preds_binary):
-                predictions[j][i] = pred[0]
-                
-        prediction_aspect_result = predictions.astype(int)
-        # Tampilkan data yang sudah diunggah
-        st.write("Data yang diunggah:")
-        st.write(df)
-
-        # Tampilkan hasil prediksi
-        st.write("Hasil Prediksi:", str(selected_aspects))
-        st.write(prediction_aspect_result)
-
 def three_aspect():
     review_test = st.text_input('Write a Review', value=None)
     st.markdown("---")
@@ -112,7 +68,7 @@ def three_aspect():
     st.markdown("---")
     selected_aspects = st.multiselect("Pilih 3 aspek:", aspect_options, max_selections=3)
 
-    if len(selected_aspects) == 2:
+    if (review_test is not None or uploaded_file_single_aspect is not None) and len(selected_aspects) == 3:
         model_filenames = get_models(selected_aspects)
         models = []
         for filename in model_filenames:
@@ -139,15 +95,64 @@ def three_aspect():
             for j, pred in enumerate(preds_binary):
                 predictions[j][i] = pred[0]
                 
-        prediction_aspect_result = predictions.astype(int)
-        # Tampilkan data yang sudah diunggah
-        st.write("Data yang diunggah:")
-        st.write(df)
+        prediction_aspect_result = predictions.astype(int).tolist()
+        actual_aspect = (df[selected_aspects[0]].astype(str) + ',' + df[selected_aspects[1]].astype(str) + ',' + df[selected_aspects[2]].astype(str)) if uploaded_file_single_aspect is not None else None
+        
+        # Membuat DataFrame hasil prediksi
+        results = pd.DataFrame({'Text': df['text'], 'Actual Aspect': actual_aspect, 'Predicted Aspect': prediction_aspect_result})
+        table_data = [results.columns.tolist()] + results.values.tolist()
 
-        # Tampilkan hasil prediksi
-        st.write("Hasil Prediksi:", str(selected_aspects))
-        st.write(prediction_aspect_result)
+        # Menampilkan tabel hasil prediksi
+        st.subheader('Predicted Result :')
+        st.write("selected aspects :", selected_aspects)
+        st.table(table_data)
 
+def two_aspect():
+    review_test = st.text_input('Write a Review', value=None)
+    st.markdown("---")
+    uploaded_file_single_aspect = st.file_uploader("Unggah file review kalimat kombinasi aspect", type=["xlsx"])
+    st.markdown("---")
+    selected_aspects = st.multiselect("Pilih 2 aspek:", aspect_options, max_selections=2)
+    st.markdown("---")
+
+    if (review_test is not None or uploaded_file_single_aspect is not None) and len(selected_aspects) == 2:
+        model_filenames = get_models(selected_aspects)
+        models = []
+        for filename in model_filenames:
+            model = load_model(filename)
+            models.append(model)
+        
+        if uploaded_file_single_aspect is not None:
+            df = pd.read_excel(uploaded_file_single_aspect)
+        else:
+            df = pd.DataFrame({'text': [review_test]})
+        review_cleaned = df['text'].apply(cleaning).apply(casefolding)
+
+        # tokenize text
+        tokenizer = Tokenizer()
+        tokenizer.fit_on_texts(review_cleaned)
+        X=tokenizer.texts_to_sequences(review_cleaned)
+        X=pad_sequences(X, maxlen=31, padding='post')
+
+        # # Lakukan prediksi pada seluruh data test menggunakan setiap model
+        predictions = np.zeros((X.shape[0], len(models)))
+        for i, model in enumerate(models):
+            preds = model.predict(X)
+            preds_binary = np.where(preds > 0.5, 1, 0)
+            for j, pred in enumerate(preds_binary):
+                predictions[j][i] = pred[0]
+                
+        prediction_aspect_result = predictions.astype(int).tolist()
+        actual_aspect = (df[selected_aspects[0]].astype(str) + ',' + df[selected_aspects[1]].astype(str)) if uploaded_file_single_aspect is not None else None
+
+        # Membuat DataFrame hasil prediksi
+        results = pd.DataFrame({'Text': df['text'], 'Actual Aspect': actual_aspect, 'Predicted Aspect': prediction_aspect_result})
+        table_data = [results.columns.tolist()] + results.values.tolist()
+
+        # Menampilkan tabel hasil prediksi
+        st.subheader('Predicted Result :')
+        st.write("selected aspects :", selected_aspects)
+        st.table(table_data)
 
 def single_aspect():
     review_test = st.text_input('Write a Review', value=None)
@@ -159,13 +164,13 @@ def single_aspect():
     st.markdown("---")
 
     if (review_test is not None or uploaded_file_single_aspect is not None) and selected_aspect != "none":
-        model = get_selected_model(selected_aspect)
-
         if uploaded_file_single_aspect is not None:
-            df = pd.read_excel(uploaded_file_single_aspect)  # Ganti dengan metode yang sesuai untuk membaca file yang diupload
+            df = pd.read_excel(uploaded_file_single_aspect)
         else:
             df = pd.DataFrame({'text': [review_test]})
+
         review_cleaned = df['text'].apply(cleaning).apply(casefolding)
+        model = get_selected_model(selected_aspect)
 
         tokenizer = Tokenizer()
         tokenizer.fit_on_texts(review_cleaned)
@@ -178,10 +183,57 @@ def single_aspect():
         predictions_label = tf.where(predictions_label < threshold, 0, 1)
 
         for result in predictions_label:
-            predicted_result.append(result[0].numpy())
-        
-        st.write("aspect :", selected_aspect)
-        st.write("predicted aspect :", predicted_result)
+            if result[0] == 1:
+                predicted_result.append(selected_aspect)
+            else:
+                predicted_result.append("lainnya")
+
+        # Membuat DataFrame hasil prediksi
+        results = pd.DataFrame({'Text': df['text'], 'Predicted Result': predicted_result})
+        table_data = [results.columns.tolist()] + results.values.tolist()
+
+        # Menampilkan tabel hasil prediksi
+        st.subheader('Predicted Result :')
+        st.table(table_data)
+
+def sentiment():
+    review_test = st.text_input('Write a Review', value=None)
+    st.markdown("---")
+    uploaded_file_single_aspect = st.file_uploader("Unggah file review kalimat", type=["xlsx"])
+    st.markdown("---")
+
+    if review_test is not None or uploaded_file_single_aspect is not None:
+        if uploaded_file_single_aspect is not None:
+            df = pd.read_excel(uploaded_file_single_aspect)
+        else:
+            df = pd.DataFrame({'Text': [review_test]})
+
+        review_cleaned = df['Text'].apply(cleaning).apply(casefolding)
+        model = load_model('sentiment_aspek.h5')
+
+        tokenizer = Tokenizer()
+        tokenizer.fit_on_texts(review_cleaned)
+        X=tokenizer.texts_to_sequences(review_cleaned)
+        X=pad_sequences(X, maxlen=31, padding='post')
+
+        threshold = 0.5
+        predicted_result = []
+        predictions_label = model.predict(X)
+        predictions_label = tf.where(predictions_label < threshold, 0, 1)
+
+        for result in predictions_label:
+            if result[0] == 1:
+                predicted_result.append("positive")
+            else:
+                predicted_result.append("negative")
+
+        # Membuat DataFrame hasil prediksi
+        results = pd.DataFrame({'Text': df['Text'], 'Predicted Result': predicted_result})
+        table_data = [results.columns.tolist()] + results.values.tolist()
+
+        # Menampilkan tabel hasil prediksi
+        st.subheader('Predicted Result :')
+        st.table(table_data)
 
 # Control display data
 def show_content(menu):
@@ -197,12 +249,14 @@ def show_content(menu):
         st.subheader("Kombinasi kalimat 3 aspek")
         three_aspect()
 
+    elif menu == "Sentimen Kalimat":
+        st.subheader("Sentimen Kalimat")
+        sentiment()
+
 st.title('Multi Aspect Sentiment Analysis')
 
-# Daftar menu navbar
-menu_list = ["Aspect Based", "Kombinasi 2 Aspect", "Kombinasi 3 Aspect"]
-
-# Pilihan menu dari user
+# display menu
+menu_list = ["Aspect Based", "Kombinasi 2 Aspect", "Kombinasi 3 Aspect", "Sentimen Kalimat"]
 selected_menu = st.sidebar.radio("Menu", menu_list)
 
 # Tampilkan konten berdasarkan menu yang dipilih
